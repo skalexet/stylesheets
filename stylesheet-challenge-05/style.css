@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700;900&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url('img/main.jpg');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    display: flex;
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    min-height: 100vh;
+    letter-spacing: 1.6px;
+    line-height: auto;
+}
+
+aside {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 1rem;
+    background-color: rgba(0, 0, 0, 0.89);
+    width: fit-content;
+    height: 100vh;
+    box-shadow: 1em 1em 1em 1em rgba(0, 0, 0, 0.89);
+}
+
+aside ul {
+    padding: 0;
+    list-style-type: none; 
+}
+
+aside a {
+    color: #fff;
+    font-size: 1.2rem;
+    text-decoration: none;
+    margin: 1rem;
+    transition: color 0.2s;
+}
+
+aside a:hover {
+    color: rgb(20, 152, 185);
+}
+
+.special {
+    color: rgb(25, 163, 197);
+    display: block;
+    padding: 1rem;
+    text-align: center;
+    transition: background-color 1s;
+    border-radius: 2px;
+}
+
+.special:hover {
+    background-color: rgb(12, 84, 102);
+}
+
+main h1 {
+    margin: 0; 
+    color: #fff;
+}
+
+main h3 {
+    color: rgb(25, 163, 197);
+    margin: 0; 
+}
+
+.logo {
+    font-size: 3rem;
+    text-shadow: 2px 1px rgba(0, 0, 0, 0.575);
+}
+
+.logo span {
+    color: #fff;
+     
+}
+ 
+
+@media screen and (max-width: 810px) {
+    body {
+        flex-direction: column-reverse;
+    }
+    main {
+        min-height: 60vh;
+    }
+
+    aside {
+        height: auto;
+        width: 100%;
+    }
+    
+
+    aside ul {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .logo {
+        font-size: 1.5rem;
+    }
+
+    .special {
+        display: none;
+    }
+}

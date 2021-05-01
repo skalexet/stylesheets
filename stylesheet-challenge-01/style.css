@@ -1,0 +1,145 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #fff;
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+}
+
+header {
+    background-image: url('main.jpg');
+    background-size: cover;
+    background-position: center center;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    min-height: calc(100vh - 100px);
+}
+
+.content {
+    font-size: 1.5rem;
+    margin: auto;
+    max-width: 100%;
+}
+
+.content h1 {
+    color: #ffffff;
+    margin-bottom: 0;
+    padding: 19px;
+    max-width: fit-content;
+}
+
+.container {
+    padding: 0.1rem;
+    margin: 0 auto;
+    max-width: 100%;
+    width: 1000px;
+    justify-content: space-between;
+} 
+
+.items {
+    display: flex;
+    flex-direction: column; 
+}
+
+.items h1 {
+    background-color: rgba(23, 40, 41, 0.719);
+} 
+.items span {
+    background-color: rgb(0, 0, 0);
+    font-weight: 100;
+    padding: 8px;
+} 
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem;
+}
+ 
+
+nav ul {
+    background-color: rgba(23, 40, 41, 0.719);;
+    display: flex;
+    justify-content: space-between;
+    list-style-type: none;
+    padding: 2em;
+    width: 100%;
+}
+ 
+
+nav li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 500;
+    letter-spacing: 1.8px;
+}
+
+ 
+ 
+.highlight {
+    background-color: #093846d2;
+    color: #fff;
+    padding: 1rem;
+    text-decoration: none;
+}
+
+
+footer {
+    background-color: #000;
+    padding: 2rem;
+    color: #fff;
+    padding: 1rem;
+}
+
+footer ul {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    list-style-type: none;
+    padding: 0;
+}
+
+footer strong {
+    color: #fffcd7;
+    letter-spacing: 2px;
+}
+
+footer p {
+    margin: 0;
+}
+
+@media screen and (max-width: 700px) {
+    .content {
+        font-size: 1.4rem;
+        margin: 2rem auto 0;
+    }
+
+    nav ul {
+        flex-direction: column; 
+ 
+    }
+
+    nav li:not(:last-child) {
+        margin-bottom: 1rem;
+    }
+
+    nav .highlight {
+        display: none;
+    }
+
+    footer ul {
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    footer li {
+        text-align: center;
+        margin: 1rem;
+    }
+}

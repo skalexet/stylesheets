@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&display=swap');
+
+body {
+    background-color: #dadada1a;
+    font-family: 'Playfair Display', serif;
+    margin: 0;
+    letter-spacing: 1.5px;
+}
+
+.text-center {
+    margin: auto;
+    max-width: 65%;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.container {
+    background-color: #fff;
+    margin: 0 auto;
+    padding: 1rem;
+    width: 65%;
+    max-width: 100%;
+}
+
+.logo {
+    display: flex;
+    font-size: 2rem;
+    font-weight: bold;
+    margin: 1rem 0 0.5rem;
+}
+
+.logo i {
+    font-size: 3rem;
+    margin-right: 1rem;
+}
+
+time {
+    font-weight: bold;
+}
+
+nav {
+    border-top: 2px solid #c4c4c4;
+}
+
+nav ul{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 0;
+    list-style-type: none;
+}
+
+nav a {
+    text-decoration: none;
+    color: #000;
+    font-size: 2em;
+    font-weight: bold;
+    letter-spacing: 6px;
+    margin: 1rem;
+}
+
+.row {
+    display: flex;
+}
+
+.col {
+    padding: 1.5rem;
+    flex: 1;
+}
+
+.col:not(:last-child) {
+    border-right: 2px solid #c4c4c4
+}
+
+img {
+    max-width: 100%;
+    min-width: 90%;
+}
+
+main p {
+    line-height: 1.5rem;
+    letter-spacing: 1px;
+}
+
+main h3 {
+    margin-top: 0;
+}
+
+@media screen and (max-width: 1000px) {
+    .row {
+        flex-direction: column;
+    }
+
+    .row .col {
+        
+    }
+
+    .container nav ul {
+        flex-direction: column;
+        align-content: center;
+    }
+    nav a {
+        font-size: 2rem;
+        margin: 1em;
+    }
+
+    .col:not(:last-child) {
+      border-right: none;   
+    }
+}

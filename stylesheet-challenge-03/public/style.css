@@ -1,0 +1,156 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #b7bcc0;
+    font-family: "Roboto", sans-serif;
+    margin: 0;
+    transition: background 0.4s ease-in-out;
+}
+
+a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.hamburger {
+    position: fixed;
+    top: 2rem;
+    left: 2rem;
+    font-size: 3em;
+}
+
+.phone {
+    background: transparent;
+    color: #f0f0f0;
+    border: none;
+    position: fixed;
+    top: 2rem;
+    right: 2rem;
+    font-size: 3em;
+}
+
+.logo {
+    color: #fff;
+    font-size: 1.7rem;
+    margin: 2rem 0;
+    text-align: center;
+}
+
+.logo i {
+    font-size: 3rem;
+}
+
+.logo h1 {
+    font-weight: normal;
+    margin: 0;
+    color: rgb(233, 233, 233);
+}
+.logo p {
+    color: rgb(85, 0, 0);
+    font-weight: bold;
+    margin: 0;
+}
+
+.carousel-container {
+    overflow: hidden;
+    position: relative;
+    height: 60vh;
+    width: 100vw;
+    margin-top: 10rem;
+}
+
+.carousel {
+    display: flex;
+    position: absolute;
+    left: 0;
+    top: 0;
+    transform: translateX(0);
+    transition: transform 0.4s ease-in-out;
+}
+
+.slide {
+    width: 100vw;
+    text-align: center;
+}
+
+.slide img {
+    object-fit: cover;
+    height: 400px;
+    width: 400px;
+}
+
+.slide h1 {
+    color: #fff;
+    font-size: 4rem;
+    margin-top: -2rem;
+}
+
+.slide a {
+    background-color: transparent;
+    border: 1px solid #858585;
+    color:  #858585;
+    padding: 0.6rem 3rem;
+    font-size: 1.2rem;
+    letter-spacing: 3px;
+}
+
+.arrow {
+    background-color: transparent;
+    border: 0;
+    cursor: pointer;
+    position: absolute;
+    top: 30%;
+    transform: translateY(-50%);
+    font-size: 5rem;
+    color: rgb(126, 120, 120);
+    outline: none;
+}
+
+.left-arrow {
+    left: 2rem;
+}
+.right-arrow {
+    right: 2rem;
+}
+
+@media screen and (max-width: 700px) {
+    .logo {         
+        margin: 1.2rem 0;
+    }
+    
+    .hamburger {
+        top: 1rem;
+        left: 1rem;
+    }
+
+    .phone {
+        top: 1rem;
+        right: 1rem;
+    }
+    
+    .logo h1 {
+        font-size: 1.5em;
+    }
+    
+    .carousel-container {
+        margin-top: 5rem;
+    }
+    
+    .arrow {
+        top: 45%;
+        font-size: 2rem;
+    }
+
+    .slide img {
+        height: 350px;
+        width: 350px;
+    }
+
+    .slide h1 {
+        font-size: 2rem;
+    }
+}

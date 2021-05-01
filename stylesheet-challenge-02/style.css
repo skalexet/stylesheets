@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+}
+
+a {
+    color: #fff;
+    text-decoration: none;
+}
+
+header {
+    background-image: url('main.jpg');
+    background-size: cover;
+    background-position: center center;
+    min-height: 100vh;
+}
+
+.container {
+     
+    margin: 0 auto;
+    padding: 1rem;
+    width: 1000px;
+    max-width: 100%;
+}
+
+nav {
+    padding: 1rem 0
+}
+
+.pre-nav {
+    font-size: 1.7rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    color: #f5ffe8;
+    background-color: rgba(8, 41, 41, 0.76);
+    font-weight: bold;
+    font-size: 3rem;
+    letter-spacing: 2px;
+}
+
+nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    list-style-type: none;
+    padding: 0;
+}
+
+nav li {
+    flex: 1 auto;
+}
+
+nav li a {
+    background-color: rgba(0, 42, 42, 0.781);
+    display: block;
+    padding: 1rem 2rem;
+    text-align: center;
+}
+
+nav a.active {
+    background-color: #fff;
+    color: rgb(10, 62, 83);
+    font-weight: bold;
+}
+
+nav a.hightlight {
+    background-color: rgb(17, 70, 77);
+    color: #fff;
+}
+
+nav a:hover {
+    opacity: 0.8
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    font-size: 2rem;
+    align-items: center;
+    margin-top: 5rem;
+}
+
+.content h1 {
+    background-color: rgba(0, 42, 42);
+    color: #fff;
+    display: inline-block;
+    padding: 1rem;
+    font-weight: 400;
+}
+
+.white-link {
+    background-color: #fff;
+    color: #0c393f;
+    padding: 1rem;
+}
+
+.teal-link {
+    background-color: #0c393f;
+    color: #fff;
+    padding: 1rem;
+    margin-top: 2rem;
+}
+
+@media screen and (max-width: 1000px) {
+    .pre-nav {
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .content {
+        font-size: 1.5rem;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .content {
+        font-size: 0.5rem;
+    }
+}
